@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" role="img"
+ aria-label="What OpenOcto is">
+<defs><style>
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes dash{to{stroke-dashoffset:-18}}
+  @keyframes pulse{0%,100%{opacity:.72}50%{opacity:1}}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes travel{0%{transform:translateX(0);opacity:0}15%,85%{opacity:1}100%{transform:translateX(var(--d,64px));opacity:0}}
+  .rise{animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+  .fade{animation:fadeIn .7s ease both}
+  .dash{stroke-dasharray:5 5;animation:dash 1.1s linear infinite}
+  .pulse{animation:pulse 3s ease-in-out infinite}
+  .bar{transform-origin:left center;animation:grow .8s cubic-bezier(.22,1,.36,1) both}
+  .pk{animation:travel 2.4s cubic-bezier(.5,0,.5,1) infinite}
+  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}
+  .d4{animation-delay:.35s}.d5{animation-delay:.45s}.d6{animation-delay:.55s}
+  .d7{animation-delay:.65s}.d8{animation-delay:.75s}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<linearGradient id="cg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#182135"/><stop offset="1" stop-color="#121a29"/></linearGradient>
+<linearGradient id="pg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#0d1117"/><stop offset=".5" stop-color="#16233c"/><stop offset="1" stop-color="#0d1117"/></linearGradient>
+<filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#000" flood-opacity=".45"/></filter></defs>
+<rect x="30" y="20" width="840" height="340" rx="16" fill="url(#cg)" stroke="#2a3a59" stroke-width="1" filter="url(#sh)"/>
+<text x="56" y="62" font-size="26" font-weight="700" fill="#5eead4" font-family="'Segoe UI',Arial,sans-serif">What it is</text>
+<text x="56" y="90" font-size="15" fill="#c4d2ea" font-family="'Segoe UI',Arial,sans-serif">An open, language-based control ecosystem for robots and machinery.</text>
+<text x="56" y="112" font-size="14" fill="#8fa1c4" font-family="'Segoe UI',Arial,sans-serif">One implementation-independent language drives heterogeneous devices over a single session protocol —</text>
+<text x="56" y="132" font-size="14" fill="#8fa1c4" font-family="'Segoe UI',Arial,sans-serif">no knowledge of make, bus, or register layout required.</text>
+
+<g class="rise d3" font-family="'Segoe UI',Arial,sans-serif">
+<rect x="330" y="150" width="240" height="62" rx="12" fill="#1b2c4a" stroke="#5eead4" stroke-width="2"/>
+<text x="450" y="178" text-anchor="middle" font-size="16" font-weight="700" fill="#5eead4">OctoScript</text>
+<text x="450" y="198" text-anchor="middle" font-size="12" fill="#9fb0d0">one program</text>
+</g>
+
+<path class="dash" d="M450,214 Q300,228 140,246" fill="none" stroke="#5eead4" stroke-width="2"/>
+<polygon points="140,250 134,240 146,240" fill="#5eead4"/>
+<path class="dash" d="M450,214 Q392,228 345,246" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+<polygon points="345,250 339,240 351,240" fill="#7dd3fc"/>
+<path class="dash" d="M450,214 Q508,228 555,246" fill="none" stroke="#f472b6" stroke-width="2"/>
+<polygon points="555,250 549,240 561,240" fill="#f472b6"/>
+<path class="dash" d="M450,214 Q612,228 765,246" fill="none" stroke="#facc15" stroke-width="2"/>
+<polygon points="765,250 759,240 771,240" fill="#facc15"/>
+
+<g class="rise d4" font-family="'Segoe UI',Arial,sans-serif"><g class="pulse">
+<rect x="45" y="256" width="180" height="56" rx="12" fill="#151f33" stroke="#5eead4" stroke-width="1.5"/>
+<text x="66" y="290" font-size="22">🤖</text>
+<text x="100" y="278" font-size="13" font-weight="700" fill="#e6edf7">Robots</text>
+<text x="100" y="296" font-size="11.5" fill="#9fb0d0">any make</text></g></g>
+
+<g class="rise d5" font-family="'Segoe UI',Arial,sans-serif"><g class="pulse" style="animation-delay:.4s">
+<rect x="255" y="256" width="180" height="56" rx="12" fill="#151f33" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="276" y="290" font-size="22">🔌</text>
+<text x="310" y="278" font-size="13" font-weight="700" fill="#e6edf7">8 KB MCUs</text>
+<text x="310" y="296" font-size="11.5" fill="#9fb0d0">no OS needed</text></g></g>
+
+<g class="rise d6" font-family="'Segoe UI',Arial,sans-serif"><g class="pulse" style="animation-delay:.8s">
+<rect x="465" y="256" width="180" height="56" rx="12" fill="#151f33" stroke="#f472b6" stroke-width="1.5"/>
+<text x="486" y="290" font-size="22">📡</text>
+<text x="520" y="278" font-size="13" font-weight="700" fill="#e6edf7">Sensor nets</text>
+<text x="520" y="296" font-size="11.5" fill="#9fb0d0">pub/sub events</text></g></g>
+
+<g class="rise d7" font-family="'Segoe UI',Arial,sans-serif"><g class="pulse" style="animation-delay:1.2s">
+<rect x="675" y="256" width="180" height="56" rx="12" fill="#151f33" stroke="#facc15" stroke-width="1.5"/>
+<text x="696" y="290" font-size="22">⚙️</text>
+<text x="730" y="278" font-size="13" font-weight="700" fill="#e6edf7">Actuators</text>
+<text x="730" y="296" font-size="11.5" fill="#9fb0d0">named procedures</text></g></g>
+</svg>
